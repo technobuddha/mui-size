@@ -1,0 +1,42 @@
+{
+  "name": "mui-size",
+  "version": "0.0.1",
+  "description": "Material-UI component to measure size of children",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rm dist/*",
+    "build": "tsc",
+    "prepublishOnly": "npm version patch -m 'Publish Release %s'",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technobuddha/mui-size.git"
+  },
+  "keywords": [
+    "mui",
+    "material-ui",
+    "size",
+    "autosize"
+  ],
+  "author": "Phil Hill <phil@technobuddha.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/technobuddha/mui-size/issues"
+  },
+  "homepage": "https://github.com/technobuddha/mui-size#readme",
+  "devDependencies": {
+    "@types/lodash.throttle": "^4.1.6",
+    "@types/react": "^16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "lodash.throttle": "^4.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
