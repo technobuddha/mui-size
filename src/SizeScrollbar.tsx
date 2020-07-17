@@ -30,11 +30,13 @@ export const SizeScrollbar: React.FC<SizeScrollbarProps> = (props: SizeScrollbar
         () => {
             const handleResize = throttle(() => setState(measure()), 166); // 10 frames at 60 Hz
             window.addEventListener('resize', handleResize);
+            div.current?.addEventListener('resize', handleResize);
             setState(measure());
 
             return (() => {
                 handleResize.cancel();
                 window.removeEventListener('resize', handleResize);
+                div.current?.removeEventListener('reisze', handleResize);
             });
         },
         []
