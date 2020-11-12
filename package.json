@@ -1,6 +1,6 @@
 {
   "name": "mui-size",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Material-UI component to measure size of children",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
