@@ -17,11 +17,13 @@ export const Size: React.FC<SizeProps> = (props: SizeProps) => {
         () => {
             const handleResize = throttle(() => setState(measure()), 166); // 10 frames at 60 Hz
             window.addEventListener('resize', handleResize);
+            div.current?.addEventListener('resize', handleResize);
             setState(measure());
 
             return (() => {
                 handleResize.cancel();
                 window.removeEventListener('resize', handleResize);
+                div.current?.removeEventListener('resize', handleResize);
             });
         },
         []
