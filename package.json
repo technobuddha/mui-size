@@ -27,16 +27,19 @@
     "url": "https://github.com/technobuddha/mui-size/issues"
   },
   "homepage": "https://github.com/technobuddha/mui-size#readme",
-  "devDependencies": {
-    "@types/lodash.throttle": "^4.1.6",
-    "@types/react": "^16.14.2",
-    "@types/react-dom": "^16.9.10",
-    "typescript": "^4.1.3"
-  },
+
   "dependencies": {
     "@material-ui/core": "^4.11.2",
-    "lodash.throttle": "^4.1.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "lodash.throttle": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/lodash.throttle": "^4.1.6",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "typescript": "^4.1.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
