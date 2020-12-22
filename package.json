@@ -1,6 +1,6 @@
 {
   "name": "mui-size",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Material-UI component to measure size of children",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,7 +27,6 @@
     "url": "https://github.com/technobuddha/mui-size/issues"
   },
   "homepage": "https://github.com/technobuddha/mui-size#readme",
-
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "lodash.throttle": "^4.1.1"
